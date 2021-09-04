@@ -6,3 +6,9 @@ $(document).ready(function() {
 $(document).ready(function() {
   $(".dropdown-toggle").dropdown();
 });
+
+
+// Preloader
+$( window ).on( "load", function() {
+  $('.preloader-container').fadeOut('slow')
+})

@@ -14,6 +14,31 @@ body::-webkit-scrollbar-thumb {
   border-radius: 20px;
 }
 
+.preloader-container {
+  background: $color-primary;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .loader {
+    border: 16px solid #f3f3f3;
+    border-top: 16px solid #232323;
+    border-bottom: 16px solid #232323;
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+    animation: spin 2s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+}
+
 a {
   text-decoration: none !important;
   &:hover {
