@@ -12,7 +12,7 @@ if( w < 1000 ) {
 }
 
 $("#mygallery").justifiedGallery({
-  lastRow : 'justify',
+  lastRow : 'nojustify',
   rowHeight: rowH,
   maxRowHeight: 1000,
   margins: 15,

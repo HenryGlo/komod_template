@@ -258,6 +258,18 @@ a {
   }
   #mygallery {
     margin-top: 100px;
+    .jg-caption {
+      height: 100%;
+      .title {
+        font-size: 20px;
+        font-weight: 700;
+      }
+
+      .description {
+        font-size: 14px;
+        font-weight: 300;
+      }
+    }
   }
   .product-container {
     margin-top: 50px;
