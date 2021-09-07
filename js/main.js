@@ -12,3 +12,9 @@ $(document).ready(function() {
 $( window ).on( "load", function() {
   $('.preloader-container').fadeOut('slow')
 })
+
+//JustifiedGallery
+$("#mygallery").justifiedGallery({
+  lastRow : 'nojustify',
+  margins : 3
+});
