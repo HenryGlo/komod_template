@@ -83,6 +83,11 @@ a {
 .page-navbar {
   background: #232323;
   padding: 25px 0 !important;
+  .navbar-brand {
+    img {
+      width: 70%;
+    }
+  }
   .navbar-collapse {
     .nav-item {
       a {
@@ -100,10 +105,13 @@ a {
   }
 }
 
-@media only screen
-      and (min-device-width: 600px)
-      and (max-device-width: 200px)  {
+@media only screen and (max-width: 1000px) {
   .page-navbar {
+    .navbar-brand {
+      img {
+        width: 100% !important;
+      }
+    }
     .navbar-collapse {
       margin-top: 30px;
       .nav-item {
