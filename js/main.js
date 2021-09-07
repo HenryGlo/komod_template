@@ -19,5 +19,6 @@ $("#mygallery").justifiedGallery({
   rowHeight: 150,
   margins: 15,
   cssAnimation: true,
-  randomize: true
+  randomize: true,
+  border: 30
 });
