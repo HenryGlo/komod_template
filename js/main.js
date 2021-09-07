@@ -17,5 +17,5 @@ $( window ).on( "load", function() {
 $("#mygallery").justifiedGallery({
   lastRow : 'nojustify',
   margins : 3,
-  rowHeight:160
+  rowHeight: 180
 });
