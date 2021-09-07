@@ -4,9 +4,17 @@ $( window ).on( "load", function() {
 })
 
 //JustifiedGallery
+
+var w = $(window).width();
+var rowH = 220
+if( w < 1000 ) {
+  rowH = 100;
+}
+
 $("#mygallery").justifiedGallery({
-  lastRow : 'nojustify',
-  rowHeight: 230,
+  lastRow : 'justify',
+  rowHeight: rowH,
+  maxRowHeight: 1000,
   margins: 15,
   cssAnimation: true,
   randomize: true,
