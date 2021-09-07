@@ -7,6 +7,7 @@ $( window ).on( "load", function() {
 $("#mygallery").justifiedGallery({
   lastRow : 'nojustify',
   rowHeight: 150,
+  maxRowHeight: 200,
   margins: 15,
   cssAnimation: true,
   randomize: true,
