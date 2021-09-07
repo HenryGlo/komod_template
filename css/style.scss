@@ -259,14 +259,18 @@ a {
   #mygallery {
     margin-top: 100px;
     .jg-caption {
+      opacity: 1;
+      cursor: pointer;
+      text-align: center;
+      background: #ff000096 !important;
       height: 100%;
       .title {
-        font-size: 20px;
+        font-size: 25px;
         font-weight: 700;
       }
 
       .description {
-        font-size: 14px;
+        font-size: 16px;
         font-weight: 300;
       }
     }
