@@ -81,7 +81,7 @@ a {
 }
 
 .page-navbar {
-  background: #232323;
+  background: #fff;
   padding: 25px 0 !important;
   .navbar-brand {
     img {
@@ -95,7 +95,7 @@ a {
         padding-bottom: 0 !important;
         font-size: 14px;
         font-weight: 800;
-        color: #fff;
+        color: #232323;
         transition: all 0.5s ease-in-out;
         &:hover {
           color: $color-primary;
