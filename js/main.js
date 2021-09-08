@@ -6,7 +6,7 @@ $( window ).on( "load", function() {
 //JustifiedGallery
 
 var w = $(window).width();
-var rowH = 220
+var rowH = 250
 if( w < 1000 ) {
   rowH = 100;
 }
@@ -19,4 +19,16 @@ $("#mygallery").justifiedGallery({
   cssAnimation: true,
   randomize: true,
   border: 30
+});
+
+
+// Magnific PopUp
+$('#mygallery').each(function() { // the containers for all your galleries
+  $(this).magnificPopup({
+      delegate: 'a', // the selector for gallery item
+      type: 'image',
+      gallery: {
+        enabled:true
+      }
+  });
 });
