@@ -244,10 +244,10 @@ a {
   background-size: 100% auto;
   position: relative;
   min-height: 70vh;
-  position: relative;
 
   .banner-title {
     margin-bottom: 100px;
+    height: 100%;
   }
 
   .counter-item {
@@ -271,7 +271,6 @@ a {
     background-size: auto 100%;
     min-height: 100vh;
     .banner-fade  {
-      position: relative;
       padding: 50px 0;
     }
     .medium {
