@@ -204,6 +204,7 @@ a {
 
 @media only screen and (max-width: 1500px) {
   .banner-section {
+    background-size: auto 100%;
     .banner-title {
       font-size: 30px !important;
     }
@@ -267,8 +268,8 @@ a {
 
 @media only screen and (max-width: 1000px) {
   .about-us-section {
+    background-size: auto 100%;
     min-height: 100vh;
-    background-size: 100% 100%;
     .banner-fade  {
       position: relative;
       padding: 50px 0;
