@@ -127,10 +127,10 @@ a {
   height: 30%;
   bottom: 0;
   background: rgb(255,0,0);
-  background: -moz-linear-gradient(0deg, rgba(255,0,0,0.5270483193277311) 31%, rgba(0,212,255,0) 91%);
-  background: -webkit-linear-gradient(0deg, rgba(255,0,0,0.5270483193277311) 31%, rgba(0,212,255,0) 91%);
-  background: linear-gradient(0deg, rgba(255,0,0,0.5270483193277311) 31%, rgba(0,212,255,0) 91%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff0000",endColorstr="#00d4ff",GradientType=1);
+  background: -moz-linear-gradient(0deg, rgba(255,0,0,1) 7%, rgba(0,212,255,0) 41%);
+background: -webkit-linear-gradient(0deg, rgba(255,0,0,1) 7%, rgba(0,212,255,0) 41%);
+background: linear-gradient(0deg, rgba(255,0,0,1) 7%, rgba(0,212,255,0) 41%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff0000",endColorstr="#00d4ff",GradientType=1);
 }
 
 .page-navbar {
@@ -183,17 +183,45 @@ a {
   background-size: 100% 100%;
   background-repeat: no-repeat;
   position: relative;
-  padding-top: 120px;
-  min-height: 90vh;
+  padding-top: 300px;
+  padding-bottom: 300px;
   display: flex;
   justify-content: center;
   align-items: center;
   background-attachment: fixed;
 
+  .banner-item {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+
+    .icon {
+      font-size: 40px;
+      margin-bottom: 30px;
+    }
+
+    .title {
+      font-size: 40px;
+      font-weight: 600;
+      text-align: center;
+    }
+
+    .description {
+      font-size: 16px;
+      font-weight: 400;
+      text-align: center;
+    }
+
+  }
+
   .banner-title {
-    font-size: 50px;
-    font-weight: 700;
+    font-size: 70px;
+    font-weight: 800;
     letter-spacing: 3px;
+    margin-bottom: 100px;
   }
 
   .banner-subtitle {
@@ -205,6 +233,15 @@ a {
 @media only screen and (max-width: 1500px) {
   .banner-section {
     background-size: auto 100%;
+    .banner-item {
+      .title {
+        font-size: 18px;
+      }
+
+      .description {
+        font-size: 15px;
+      }
+    }
     .banner-title {
       font-size: 30px !important;
     }
@@ -226,24 +263,22 @@ a {
   }
 }
 
-.banner-fade {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background:#ff000094;
-  padding: 30px 0;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .about-us-section {
-  background-image: url('../img/about-us-banner.jpg');
-  background-position: center;
-  background-size: 100% auto;
+  background: rgb(255,255,255);
+  background: -moz-linear-gradient(0deg, rgba(255,255,255,0.9192051820728291) 24%, rgba(255,0,0,0.6979166666666667) 66%);
+  background: -webkit-linear-gradient(0deg, rgba(255,255,255,0.9192051820728291) 24%, rgba(255,0,0,0.6979166666666667) 66%);
+  background: linear-gradient(0deg, rgba(255,255,255,0.9192051820728291) 24%, rgba(255,0,0,0.6979166666666667) 66%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#ff0000",GradientType=1);
   position: relative;
   min-height: 70vh;
+
+  .banner-container {
+    padding: 60px 0 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
 
   .banner-title {
     margin-bottom: 100px;
@@ -457,8 +492,29 @@ a {
 
 
 .information-section {
+  margin-top: 100px;
   .information-container {
     margin-left: 5%;
+    .items {
+      li {
+        margin-top: 20px;
+        .icon {
+          font-size: 35px;
+          color: $color-primary;
+          margin-right: 5%;
+        }
+        .information {
+          .title {
+            font-weight: 800;
+            font-size: 20px;
+          }
+          .description {
+            font-size: 16px;
+            font-weight: 300;
+          }
+        }
+      }
+    }
     .banner-title {
       font-size: 30px;
     }
@@ -545,6 +601,28 @@ a {
           text-align: center;
         }
       }
+    }
+  }
+}
+
+.ubication {
+  padding: 150px 5%;
+  background: #a8a8a811;
+  color: #232323;
+  .banner-title {
+    font-size: 35px;
+    font-weight: 600;
+  }
+  .banner-description {
+    font-size: 20px;
+    font-weight: 300;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .ubication {
+    iframe {
+      margin-top: 50px;
     }
   }
 }
